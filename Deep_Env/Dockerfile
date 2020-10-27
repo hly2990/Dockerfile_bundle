@@ -61,8 +61,8 @@ RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
     python3.6 ~/get-pip.py && \
     ln -s /usr/bin/python3.6 /usr/local/bin/python3 && \
     ln -s /usr/bin/python3.6 /usr/local/bin/python && \
-    pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/ && \
-    pip config set global.trusted-host mirrors.aliyun.com && \
+#    pip config set global.index-url https://mirrors.aliyun.com/pypi/simple/ && \
+#    pip config set global.trusted-host mirrors.aliyun.com && \
 
     $PIP_INSTALL \
         setuptools \
