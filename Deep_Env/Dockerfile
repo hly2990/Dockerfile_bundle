@@ -85,6 +85,7 @@ RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
         pycocotools \
         opencv-contrib-python \
         ffmpeg-python \
+        redis \
         && \
 
     apt-get update -y && \
