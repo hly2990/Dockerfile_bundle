@@ -87,7 +87,7 @@ RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
         ffmpeg-python \
         redis \
         flask \
-        cupy \
+        cupy-cuda100 \
         && \
 
     apt-get update -y && \
