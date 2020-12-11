@@ -86,6 +86,8 @@ RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
         opencv-contrib-python \
         ffmpeg-python \
         redis \
+        flask \
+        cupy \
         && \
 
     apt-get update -y && \
@@ -114,7 +116,6 @@ RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
 
     $PIP_INSTALL \
         future \
-        numpy \
         protobuf \
         enum34 \
         pyyaml \
