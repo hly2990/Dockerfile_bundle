@@ -2,10 +2,10 @@
 # module list
 # ------------------------------------------------------------------
 # python        3.6    (apt)
-# tensorflow    1.13.1 (pip)
-# pytorch       1.2.0  (pip)
+# tensorflow    2.3.0 (pip)
+# pytorch       1.4.0  (pip)
 # keras         2.2.4  (pip)
-# opencv        latest  (pip)
+# opencv        3.3.0  (pip)
 # ==================================================================
 
 FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu16.04
