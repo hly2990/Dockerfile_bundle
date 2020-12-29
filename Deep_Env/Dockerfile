@@ -8,7 +8,7 @@
 # opencv        latest  (pip)
 # ==================================================================
 
-FROM nvidia/cuda:10.1-cudnn7.4-devel-ubuntu16.04
+FROM nvidia/cuda:10.1-cudnn7-devel-ubuntu16.04
 ENV LANG C.UTF-8
 RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
     PIP_INSTALL="python -m pip --no-cache-dir install --upgrade" && \
