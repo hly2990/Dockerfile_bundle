@@ -8,7 +8,7 @@
 # opencv        latest  (pip)
 # ==================================================================
 
-FROM nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04
+FROM nvidia/cuda:10.1-cudnn7.4-devel-ubuntu16.04
 ENV LANG C.UTF-8
 RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
     PIP_INSTALL="python -m pip --no-cache-dir install --upgrade" && \
@@ -68,7 +68,7 @@ RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
         setuptools \
         && \
     $PIP_INSTALL \
-        numpy>=0.16.2 \
+        numpy>=1.14.0 \
         scipy \
         pandas \
         cloudpickle \
@@ -84,6 +84,7 @@ RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
         tensorpack \
         pycocotools \
         opencv-contrib-python \
+        opencv-python>=3.3.0 \
         ffmpeg-python \
         redis \
         flask \
