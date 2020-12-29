@@ -8,7 +8,7 @@
 # opencv        latest  (pip)
 # ==================================================================
 
-FROM nvidia/cuda:10.0-cudnn7-devel-ubuntu16.04
+FROM nvidia/cuda:9.0-cudnn7-devel-ubuntu16.04
 ENV LANG C.UTF-8
 RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
     PIP_INSTALL="python -m pip --no-cache-dir install --upgrade" && \
@@ -68,7 +68,7 @@ RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
         setuptools \
         && \
     $PIP_INSTALL \
-        numpy \
+        numpy>=0.16.2 \
         scipy \
         pandas \
         cloudpickle \
@@ -98,7 +98,7 @@ RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
 # ------------------------------------------------------------------
 
     $PIP_INSTALL \
-        tensorflow-gpu==1.13.1 \
+        tensorflow-gpu==1.8.0 \
         && \
 
 # ==================================================================
@@ -122,7 +122,7 @@ RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
         typing \
         && \
     $PIP_INSTALL \
-        torch==1.2.0 torchvision==0.4.0 \
+        torch==1.4.0 torchvision==0.5.0 \
         && \
 
 # ==================================================================
