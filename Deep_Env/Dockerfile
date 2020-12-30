@@ -69,7 +69,7 @@ RUN APT_INSTALL="apt-get install -y --no-install-recommends" && \
         && \
     $PIP_INSTALL \
         numpy>=1.14.0 \
-        scipy \
+        scipy>=1.4.1 \
         pandas \
         cloudpickle \
         scikit-image>=0.14.2 \
